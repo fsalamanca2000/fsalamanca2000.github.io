@@ -1,0 +1,184 @@
+body
+{
+  margin: 0;
+}
+.container
+{
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+/*Header CSS*/
+.header
+{
+  background-color: #006f8f;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.menu
+{
+  height: inherit;
+}
+.header ol
+{
+  display: flex;
+  height: 50px;
+}
+.header ol li
+{
+  height: 50px;
+  display: flex;
+  margin: 10px;
+  margin-top: 0px;
+}
+.link-home
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  color: whitesmoke;
+  text-decoration: none;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.link
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  padding: 0px 50px;
+  color: whitesmoke;
+  text-decoration: none;
+  height: 50px;
+  align-items: center;
+
+}
+ol, ul
+{
+  margin: 5px;
+  padding: 0px;
+  list-style: none;
+}
+figure
+{
+  margin: 20px;
+  align-items: center;
+}
+/*Certification CSS*/
+.hero
+{
+  background: #1b2127;
+  padding: 20px;
+}
+.hero h1
+{
+  color: whitesmoke;
+}
+.certification
+{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.certification strong
+{
+  font-family: 'Fjalla One',serif;
+}
+.certification-details
+{
+  width: 500px;
+}
+.certification-title
+{
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.certification-course, .certification-date
+{
+  margin: 10px 0px;
+}
+.certification-description
+{
+  font-size: 20px;
+}
+.certification-imageContainer
+{
+  width: 500px;
+}
+/*Footer contact CSS*/
+.contact
+{
+  background-color: #006f8f;
+  color: whitesmoke;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-email input
+{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 5px 25px;
+  background-image: url('https://i.imgur.com/KPACUBA.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y:center;
+  background-position-x: 5px;
+}
+.form-email button
+{
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: whitesmoke;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+.form-email h3
+{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.social-link
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size:  50px 50px;
+}
+.social-link.twitter
+{
+  background-image: url('https://i.imgur.com/v7EnElR.png');
+}
+.social-link.facebook
+{
+  background-image: url('https://i.imgur.com/Nq2GKJK.png');
+}
+.social-link.github
+{
+  background-image: url('https://i.imgur.com/4piBqMq.png');
+}
+.social-link.instagram
+{
+  background-image: url('https://i.imgur.com/q9Q9TMM.png');
+}
