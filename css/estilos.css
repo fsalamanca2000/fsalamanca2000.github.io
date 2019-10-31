@@ -207,6 +207,60 @@ figure
 {
   font-size: 18px;
 }
+/*Expirence CSS*/
+.expirence-container-title
+{
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+.expirence-Container
+{
+ display: flex;
+ flex-wrap: wrap;
+}
+.expirence
+{
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #057d01;
+}
+.expirence img
+{
+  margin: -20px;
+  margin-bottom: 0px;
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.expirence-detail
+{
+  margin: 20px 40px;
+  margin-top: -60px;
+  background-color: whitesmoke;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.expirence-description
+{
+  text-align: left;
+}
+.expirence-url
+{
+  border: 1px solid ;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.expirence h3
+{
+  font-size: 18px;
+}
 /*Footer contact CSS*/
 .contact
 {
