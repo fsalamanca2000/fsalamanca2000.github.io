@@ -2,16 +2,6 @@ body
 {
   margin: 0;
 }
-.container
-{
-  width: 1000px;
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit;
-}
 /*Header CSS*/
 .header
 {
@@ -94,6 +84,7 @@ figure
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .certification strong
 {
@@ -101,7 +92,7 @@ figure
 }
 .certification-details
 {
-  width: 500px;
+  width: 50%;
 }
 .certification-title
 {
@@ -113,13 +104,13 @@ figure
 {
   margin: 10px 0px;
 }
-.certification-description
-{
-  font-size: 20px;
-}
 .certification-imageContainer
 {
-  width: 500px;
+  width: 50%;
+}
+.certification-imageContainer img
+{
+  max-width: 100%;
 }
 /*Footer contact CSS*/
 .contact
@@ -181,4 +172,101 @@ figure
 .social-link.instagram
 {
   background-image: url('https://i.imgur.com/q9Q9TMM.png');
+}
+.container
+{
+  max-width: 1000px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+/*Responsive CSS*/
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 767px){
+  .header
+  {
+    display: block;
+    height: 70px; 
+    margin-top: -20px;
+  }
+  .header img
+  {
+    margin: 0;
+  }
+  .header a
+  {
+    justify-content: center;
+  }
+  .header figure
+  {
+    margin-bottom: -15px;
+  }
+  .header .logo
+  {
+    text-align: center;
+  }
+  .certification
+  {
+    display: block;
+  }
+  .certification-imageContainer
+  {
+    width: auto;
+    text-align: center;
+  }
+  .certfication-details
+  {
+    width: auto;
+  }
+  .certification-course, .certification-date, .certification-url
+  {
+    margin: .3em 0;
+  }
+  .certification-title
+  {
+  font-size: 1.5em;
+  margin-bottom: .3em;
+  }
+.certification-url
+  {
+  font-size: 1em;
+  }
+.certification-course
+  {
+  font-size: .7em;
+  }
+.certification-date
+  {
+  font-size: 1em;
+  }
+.certification-description
+  {
+  font-size: .8em;
+  }
+  .contact .form-email
+  {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 480px){
+  .contact
+  {
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .contact button
+  {
+    margin: 1em auto;
+  }
+}
+@media screen and (max-width: 320px){
+
 }

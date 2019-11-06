@@ -4,6 +4,7 @@ body
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0px;
   background-color: #1b2127;
+  overflow: auto;
 }
 
 h1,h2,h3,h4,h5,h6
@@ -38,7 +39,8 @@ h2
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 100px;
+  flex-wrap: wrap;
 }
 .menu
 {
@@ -65,9 +67,13 @@ h2
   padding: 0px 50px;
   color: whitesmoke;
   text-decoration: none;
-  height: 50px;
+  height: 80px;
   align-items: center;
 
+}
+.header img
+{
+  margin: -20px;
 }
 ol, ul
 {
@@ -75,7 +81,7 @@ ol, ul
   padding: 0px;
   list-style: none;
 }
-figure
+.header figure
 {
   margin:20px;
   align-items: center;
@@ -88,6 +94,7 @@ figure
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero h1
 {
@@ -103,7 +110,7 @@ figure
 .portfolio
 {
   background: #1b2127;
-  margin: -10px;
+  margin-top: -10px;
   padding: 20px;
 }
 .portfolio h2
@@ -133,7 +140,7 @@ figure
 }
 .project-details
 {
-  width: 500px;
+  width: 50%;
 }
 .project-title
 {
@@ -151,7 +158,11 @@ figure
 }
 .project-imageContainer
 {
-  width: 500px;
+  width: 50%;
+}
+.project-imageContainer img
+{
+  max-width: 100%;
 }
 /*event CSS*/
 .event-container-title
@@ -166,16 +177,16 @@ figure
 }
 .event
 {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   flex-shrink: 0;
-  overflow: hidden;
   background: #006f8f;
+  overflow: hidden;
 }
 .event img
 {
-  margin: -20px;
+  margin: -40px;
   margin-bottom: 0px;
   width: 480px;
   height: 200px;
@@ -220,8 +231,8 @@ figure
 }
 .expirence
 {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   flex-shrink: 0;
   overflow: hidden;
@@ -229,7 +240,7 @@ figure
 }
 .expirence img
 {
-  margin: -20px;
+  margin: -40px;
   margin-bottom: 0px;
   width: 480px;
   height: 200px;
@@ -270,6 +281,11 @@ figure
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-email h3
+{
+  margin-top: 0;
 }
 .form-email input
 {
@@ -324,11 +340,166 @@ figure
 }
 .container
 {
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+
+/*Desktop first Responsive Design*/
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 767px){
+  .header
+  {
+    display: block;
+    height: auto; 
+    margin-top: -20px;
+  }
+  .header ol
+  {
+    display: initial;
+  }
+  .header img
+  {
+    margin: 0;
+  }
+  .header ol li
+  {
+    height: 50px;
+    justify-content: center;
+  }
+  .header a
+  {
+    justify-content: center;
+  }
+  .header figure
+  {
+    margin-bottom: -15px;
+  }
+  .header .logo
+  {
+    text-align: center;
+  }
+  .project
+  {
+    display: block;
+  }
+  .project-imageContainer
+  {
+    width: auto;
+    text-align: center;
+  }
+  .project-details
+  {
+    width: auto;
+  }
+  .project-course, .project-date, .project-url
+  {
+    margin: .3em 0;
+  }
+  .project-title
+  {
+  font-size: 1.5em;
+  margin-bottom: .3em;
+  }
+.project-url
+  {
+  font-size: 1em;
+  }
+.project-course
+  {
+  font-size: .7em;
+  }
+.project-date
+  {
+  font-size: 1em;
+  }
+.project-description
+  {
+  font-size: .8em;
+  }
+  .event
+  {
+    width: auto;
+    flex-shrink: initial;
+    overflow: hidden;
+  }
+  .event-imageContainer
+  {
+    width: 100%;
+    margin-left: -1px;
+    margin-top: -1px;
+    overflow: hidden;
+  }
+  .event img 
+  {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .event-detail
+  {
+    margin: -4em .8em .8em;
+  }
+  .expirence
+  {
+    width: auto;
+    flex-shrink: initial;
+    overflow: hidden;
+  }
+  .expirence-imageContainer
+  {
+    width: 100%;
+    margin-left: -1px;
+    margin-top: -1px;
+    overflow: hidden;
+  }
+  .expirence img
+  {
+    width: 100%;
+    margin: 0px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .expirence-detail
+  {
+    margin: -4em .8em 8em;
+  }
+  .contact .form-email
+  {
+    padding-left: 12px;
+  }
+}
+@media screen and (max-width: 480px){
+  .certification-details
+  {
+    font-size: 12px;
+  }
+  .contact
+  {
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block;
+  }
+  .contact button
+  {
+    margin: 1em auto;
+  }
+}
+@media screen and (max-width: 320px){
+  .certification-details
+  {
+    font-size: 12px;
+  }
 }
