@@ -35,6 +35,7 @@ h1
 ```
 JavasScript *(in future)*
 ## Uncoming Udaptes
-- Create new subpages
-- Add PlatziConf 2019 Experience
-- Improve Readme.md
+- Create new subpages (Certifications and Experience).
+- Add PlatziConf 2019 Experience in main page.
+- Add Menu in Mobile Version.
+- Improve Readme.md.
