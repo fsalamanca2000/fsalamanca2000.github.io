@@ -197,7 +197,7 @@ figure
   }
   .header img
   {
-    margin: 0;
+    margin-top: 10px;
   }
   .header a
   {
@@ -252,6 +252,12 @@ figure
   .contact .form-email
   {
     padding-left: 12px;
+  }
+  .video-youtube
+  {
+    max-width: 1000px;
+    max-height: 500px;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 480px){

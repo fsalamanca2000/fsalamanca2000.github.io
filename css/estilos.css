@@ -21,10 +21,12 @@ h1
   letter-spacing: -.2px;
   color: whitesmoke;
   margin: 0px 0px 0px 0px;
+  text-shadow: 2px 2px 1px #1b2127;
 }
 h1 strong
 {
-  color: #006f8f ;
+  color: #006f8f;
+  text-shadow: 2px 2px 1px #1b2127;
 }
 h2
 {
@@ -89,22 +91,35 @@ ol, ul
 /*Hero CSS*/
 .hero
 {
-  height: 300px;
   background-color: #1b2127;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: auto;
+  position: relative;
+  margin-top: 2px;
+  overflow: hidden;
+  padding: 2em;
 }
 .hero h1
 {
   padding: 10px;
+  opacity: 1;
+  z-index: 2;
 }
 .hero-image
 {
   margin-top: -10px;
-  border-radius: 20px;
   object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.3;
 }
 /*Portafolio CSS*/
 .portfolio
@@ -163,6 +178,51 @@ ol, ul
 .project-imageContainer img
 {
   max-width: 100%;
+}
+/*Video CSS*/
+.youtube-video
+{
+  margin-left: -40px;
+  margin-bottom: 0px;
+  margin-top: -40px;
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.video
+{
+  margin: 1%;
+  width: 48%;
+  border-radius: 10px;
+  flex-shrink: 0;
+  background: #4b0076;
+  overflow: hidden;
+}
+.video-detail
+{
+  margin: 20px 40px;
+  margin-top: -60px;
+  background-color: whitesmoke;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.video-description
+{
+  text-align: left;
+}
+.video h3
+{
+  font-size: 18px;
+}
+.video-url
+{
+  border: 1px solid ;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+  font-weight: bold;
 }
 /*event CSS*/
 .event-container-title
@@ -349,12 +409,72 @@ ol, ul
   height: inherit;
   flex-wrap: inherit;
 }
-
+.hamburger-menu{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:#006f9f;
+  display: none;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 10px;
+  box-shadow: 1px 1px 2px #000;
+  opacity: 1;
+}
 /*Desktop first Responsive Design*/
 @media screen and (max-width: 1024px){
+  .hero
+  {
+    height: auto;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image
+  {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.3;
+  }
+  h1
+  {
+    font-size: 1.8em;
+    z-index: 2;
+  }
 
+  .youtube-video
+  {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -40px;
+    margin-bottom: 0px;
+    margin-top: -16px;
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .flexible-video
+  {
+    width: 100%;
+    height: 100%;
+    padding-top: 41%;
+    background: darkblue;
+    position: relative;
+  }
 }
 @media screen and (max-width: 767px){
+  .hamburger-menu{
+    display: block;
+  }
   .header
   {
     display: block;
@@ -377,6 +497,10 @@ ol, ul
   .header a
   {
     justify-content: center;
+    height: 40px;
+    width: 100vw;
+    font-size: 2em;
+    margin-bottom: .5em;
   }
   .header figure
   {
@@ -385,6 +509,42 @@ ol, ul
   .header .logo
   {
     text-align: center;
+  }
+  .menu{
+    position: fixed;
+    background-color: rgba(0, 111, 143,.9);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .menu.is-active{
+    left: 0;
+  }
+  
+  .hero
+  {
+    height: auto;
+    position: relative;
+  }
+  .hero-image
+  {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  h1
+  {
+    font-size: 1.8em;
+    z-index: 2;
   }
   .project
   {
@@ -475,12 +635,46 @@ ol, ul
   {
     margin: -4em .8em 8em;
   }
+  .video
+  {
+    width: auto;
+    flex-shrink: initial;
+    overflow: hidden;
+  }
+  .video-imageContainer
+  {
+    width: 100%;
+    margin-left: -1px;
+    margin-top: -1px;
+    overflow: hidden;
+  }
+  .youtube-video
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: -0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .video-detail
+  {
+    margin: -4em .8em .8em;
+  }
   .contact .form-email
   {
     padding-left: 12px;
   }
 }
 @media screen and (max-width: 480px){
+  h1
+  {
+    font-size: 1.5em;
+  }
   .certification-details
   {
     font-size: 12px;
@@ -498,6 +692,16 @@ ol, ul
   }
 }
 @media screen and (max-width: 320px){
+  .header a{
+    width: 100vw;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .header li
+  {
+    margin: 10px;
+  }
   .certification-details
   {
     font-size: 12px;
