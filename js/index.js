@@ -8,7 +8,7 @@ const linkC = document.querySelector('#linkContacto')
 
 ipad.addListener(validation)
 
-function validation(event_size){
+function validation(event){
   if(event.matches){
     burgerButton.addEventListener('click', hideShow)
     linkP.addEventListener('click', linkHide)
@@ -20,9 +20,8 @@ function validation(event_size){
     linkE.removeEventListener('click', linkHide)
     linkC.removeEventListener('click', linkHide)
   }
-  console.log(event_size)
 }
-
+validation(ipad)
 function hideShow(){
   if(menu.classList.contains('is-active')){
     menu.classList.remove('is-active')

@@ -333,6 +333,9 @@ ol, ul
   font-size: 18px;
 }
 /*Footer contact CSS*/
+footer{
+  margin-top: 5px;
+}
 .contact
 {
   background-color: #006f8f;
@@ -423,7 +426,7 @@ ol, ul
   opacity: 1;
 }
 /*Desktop first Responsive Design*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .hero
   {
     height: auto;
@@ -523,6 +526,9 @@ ol, ul
     justify-content: center;
     transition: 0.3s;
   }
+  .menu a{
+    width: 80vw;
+  }
   .menu.is-active{
     left: 0;
   }
@@ -582,7 +588,10 @@ ol, ul
   }
 .project-description
   {
-  font-size: .8em;
+  font-size: 1.2em;
+  }
+  .event-Container{
+    padding: 0px 10px;
   }
   .event
   {
@@ -692,8 +701,19 @@ ol, ul
   }
 }
 @media screen and (max-width: 320px){
+  .portfolio h2{
+    margin: 0px .2em;
+  }
+  .event-container-title {
+    margin: 0px .2em;
+    margin-left: 20px;
+  }
+  .video-url{
+    padding: 5px 10px;
+    font-size: .9em;
+  }
   .header a{
-    width: 100vw;
+    width: 80vw;
     font-size: 26px;
     text-align: center;
     margin-bottom: 5px;
@@ -705,5 +725,10 @@ ol, ul
   .certification-details
   {
     font-size: 12px;
+  }
+  .expirence-url 
+  {
+    padding: 5px 10px;
+    font-size: .9em;
   }
 }
