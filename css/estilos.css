@@ -527,7 +527,7 @@ footer{
     transition: 0.3s;
   }
   .menu a{
-    width: 80vw;
+    width: 60vw;
   }
   .menu.is-active{
     left: 0;
@@ -713,7 +713,7 @@ footer{
     font-size: .9em;
   }
   .header a{
-    width: 80vw;
+    width: 60vw;
     font-size: 26px;
     text-align: center;
     margin-bottom: 5px;
